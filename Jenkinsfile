@@ -39,7 +39,7 @@ pipeline {
         stage('Test') {
             steps {
 
-                bat "gradlew.bat clean test --tests ${params.testClass}"
+                bat "gradlew.bat clean test ${params.testClass}"
                 bat 'echo Fin du Test '
 
             }
